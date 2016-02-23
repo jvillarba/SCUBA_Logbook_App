@@ -1,0 +1,19 @@
+<h3><center> SCUBA Divelog App </h3></center>
+
+<h1>ADD NEW DIVE SITE</h1>
+
+<%= form_for @place do |f| %>
+  <div>
+    <%= f.label :city, 'City' %>
+    <%= f.text_field :city %>
+  </div>
+
+  <div>
+    <%= f.label :sites, 'Site' %>
+    <%= f.text_field :sites %>
+  </div>
+
+  <div>
+    <%= f.submit "Add new site" %>
+  </div>
+<% end %>

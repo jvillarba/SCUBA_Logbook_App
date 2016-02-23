@@ -1,0 +1,15 @@
+<h3><center> SCUBA Divelog App </h3></center>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @place.city %>
+</p>
+<p>
+  <strong>Dive Sites:</strong>
+  <%= @place.sites %>
+</p>
+
+<%= link_to "Edit this Dive Site", edit_place_path(@place) %> |
+<%= link_to "Delete this Dive Site", place_path, method: :delete, data: {
+  confirm: "Are you sure you want to delete this dive site?"} %> |
+<%= link_to "All Dive Sites", places_path %>

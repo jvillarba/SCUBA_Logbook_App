@@ -1,0 +1,9 @@
+<h3><center> SCUBA Divelog App </h3></center>
+
+<h1>LIST OF DIVE SITES</h1> <%= link_to "Add new Dive Site", new_place_path %>
+
+<% @places.reverse.each do |p| %>
+  <h4><%= link_to p.city, place_path(p) %></h4>
+  <h3><%= p.sites %></h3>
+  <hr>
+<% end %>
