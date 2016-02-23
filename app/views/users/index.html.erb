@@ -1,0 +1,12 @@
+<h3><center> SCUBA Divelog App </h3></center>
+
+<h1>LIST OF USERS</h1> <%= link_to "Add new User", new_user_path %>
+
+<% @users.reverse.each do |u| %>
+  <h3><%= link_to u.name, user_path(u) %></h3>
+  <h3><%= u.email %></h3>
+  <h3><%= u.certification %></h3>
+  <hr>
+<% end %>
+
+<h6>Find me in app/views/user/index.html.erb</h6>
