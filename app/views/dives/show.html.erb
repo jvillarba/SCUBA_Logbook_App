@@ -1,2 +1,54 @@
-<h1>Dives#show</h1>
-<p>Find me in app/views/dives/show.html.erb</p>
+<h3><center> SCUBA Divelog App </h3></center>
+
+<p>
+  <strong>Dive #:</strong>
+  <%= @dive.number %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @dive.date %>
+</p>
+<p>
+  <strong>Time In:</strong>
+  <%= @dive.timein %>
+</p>
+<p>
+  <strong>Time Out:</strong>
+  <%= @dive.timeout %>
+</p>
+<p>
+  <strong>Dive Depth:</strong>
+  <%= @dive.depth %>
+</p>
+<p>
+  <strong>Bottom Time:</strong>
+  <%= @dive.bottom_time %>
+</p>
+<p>
+  <strong>Starting Air:</strong>
+  <%= @dive.air_start %>
+</p>
+<p>
+  <strong>Ending Air:</strong>
+  <%= @dive.air_end %>
+</p>
+<p>
+  <strong>Nitrox:</strong>
+  <%= @dive.nitrox %>
+</p>
+<p>
+  <strong>Temperature:</strong>
+  <%= @dive.temperature %>
+</p>
+<p>
+  <strong>Weight:</strong>
+  <%= @dive.weight %>
+</p>
+<p>
+  <strong>Computer:</strong>
+  <%= @dive.computer %>
+</p>
+<%= link_to "Edit", edit_dive_path(@dive) %> |
+<%= link_to "Delete", dive_path, method: :delete, data: {
+  confirm: "Are you sure you want to delete this dive?"} %> |
+<%= link_to "All Dives", dives_path %>
