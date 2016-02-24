@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'users#index'
   resources :users
   resources :places
+  resources :dives
 
   get '/logout' => 'sessions#destroy', as: :logout
   post '/sessions' => 'sessions#create'
