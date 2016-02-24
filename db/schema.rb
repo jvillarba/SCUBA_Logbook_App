@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160223221502) do
+ActiveRecord::Schema.define(version: 20160224000953) do
+
+  create_table "dives", force: :cascade do |t|
+    t.integer  "number"
+    t.date     "date"
+    t.time     "timein"
+    t.time     "timeout"
+    t.integer  "depth"
+    t.time     "bottom_time"
+    t.integer  "air_start"
+    t.integer  "air_end"
+    t.string   "nitrox"
+    t.string   "temperature"
+    t.integer  "weight"
+    t.string   "computer"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "places", force: :cascade do |t|
     t.string   "city"

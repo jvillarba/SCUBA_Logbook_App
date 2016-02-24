@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  date: 2016-02-23
+  timein: 2016-02-23 16:09:53
+  timeout: 2016-02-23 16:09:53
+  depth: 1
+  bottom_time: 2016-02-23 16:09:53
+  air_start: 1
+  air_end: 1
+  nitrox: MyString
+  temperature: MyString
+  weight: 1
+  computer: MyString
+
+two:
+  number: 1
+  date: 2016-02-23
+  timein: 2016-02-23 16:09:53
+  timeout: 2016-02-23 16:09:53
+  depth: 1
+  bottom_time: 2016-02-23 16:09:53
+  air_start: 1
+  air_end: 1
+  nitrox: MyString
+  temperature: MyString
+  weight: 1
+  computer: MyString
