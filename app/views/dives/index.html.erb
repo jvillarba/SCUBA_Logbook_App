@@ -1,20 +1,19 @@
 <h3><center> SCUBA Divelog App </h3></center>
 
-<h1>LIST OF DIVE</h1>
-<!-- <%= link_to "Add new Dive", new_dive_path %> -->
+<h1>LIST OF DIVE</h1> <%= link_to "Add new Dive", new_dife_path %>
 
-<!-- <% @dives.reverse.each do |d| %>
-  <h3><%= link_to d.number, dive_path(d) %></h3>
+<% @dives.reverse.each do |d| %>
+  <h3><%= d.number %></h3>
   <h2><%= d.date %></h2>
   <h2><%= d.timein %></h2>
   <h2><%= d.timeout %></h2>
   <h2><%= d.depth %></h2>
   <h2><%= d.bottom_time %></h2> -->
-  <!-- <h2><%= d.air_start %></h2>
+  <h2><%= d.air_start %></h2>
   <h2><%= d.air_end %></h2>
   <h2><%= d.nitrox %></h2>
   <h2><%= d.temperature %></h2>
   <h2><%= d.weight %></h2>
-  <h2><%= d.computer %></h2> -->
-  <!-- <hr>
-<% end %> -->
+  <h2><%= d.computer %></h2>
+  <hr>
+<% end %>

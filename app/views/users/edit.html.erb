@@ -24,6 +24,11 @@
   </div>
 
   <div>
+    <%= f.label :avatar, 'Profile Picture' %>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div>
     <%= f.submit "Submit changes!" %>
   </div>
 <% end %>
