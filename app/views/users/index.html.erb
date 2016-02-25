@@ -1,9 +1,21 @@
 <h1><center>SCUBA DIVE BUDDIES</center></h1>
 <center><%= link_to "Add new buddies", new_user_path %></center>
 
-<% @users.reverse.each do |u| %>
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <div class="thumbnail">
+      <% @users.each do |u| %>
+        <%= image_tag u.avatar.url(:thumb) %>
+        <h3><%= link_to u.name, user_path(u) %></h3>
+        <h4><%= u.email %></h4>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<!-- <% @users.reverse.each do |u| %>
   <%= image_tag u.avatar.url(:thumb) %>
   <h3><%= link_to u.name, user_path(u) %></h3>
   <h4><%= u.email %></h4>
   <hr>
-<% end %>
+<% end %> -->

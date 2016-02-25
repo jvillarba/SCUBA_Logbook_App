@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224190006) do
+ActiveRecord::Schema.define(version: 20160225201600) do
 
   create_table "dives", force: :cascade do |t|
     t.integer  "number"
@@ -29,8 +29,10 @@ ActiveRecord::Schema.define(version: 20160224190006) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
+    t.integer  "place_id"
   end
 
+  add_index "dives", ["place_id"], name: "index_dives_on_place_id"
   add_index "dives", ["user_id"], name: "index_dives_on_user_id"
 
   create_table "places", force: :cascade do |t|
