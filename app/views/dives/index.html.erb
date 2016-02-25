@@ -5,15 +5,9 @@
 <% @dives.reverse.each do |d| %>
   <h3><%= d.number %>
     <%= d.date.strftime('%d %b %y') %></h3>
-  <p><%= d.timein.strftime('%H:%M') %>
+  <h4><%= d.timein.strftime('%H:%M') %>
     <%= d.timeout.strftime('%H:%M') %>
     <%= d.depth %>
-    <%= d.bottom_time %>
-    <%= d.air_start %>
-    <%= d.air_end %>
-    <%= d.nitrox %>
-    <%= d.temperature %>
-    <%= d.weight %>
-    <%= d.computer %></p>
+    <%= d.bottom_time %></h4>
   <hr>
 <% end %>
