@@ -1,6 +1,4 @@
-<h3><center> SCUBA Divelog App </h3></center>
-
-<h1>ADD NEW DIVE</h1>
+<h1><center>ADD NEW DIVE</center></h1>
 
 <%= form_for @dive do |f| %>
   <div>
@@ -26,11 +24,6 @@
   <div>
     <%= f.label :depth, 'Max. Depth' %>
     <%= f.number_field :depth %>
-  </div>
-
-  <div>
-    <%= f.label :bottom_time, 'Bottom Time' %>
-    <%= f.time_field :bottom_time %>
   </div>
 
   <div>

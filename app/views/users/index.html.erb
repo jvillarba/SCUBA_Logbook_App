@@ -1,10 +1,9 @@
-<h3><center> SCUBA Divelog App </h3></center>
-
-<h1>LIST OF USERS</h1> <%= link_to "Add new User", new_user_path %>
+<h1><center>SCUBA DIVE BUDDIES</center></h1>
+<center><%= link_to "Add new buddies", new_user_path %></center>
 
 <% @users.reverse.each do |u| %>
+  <%= image_tag u.avatar.url(:thumb) %>
   <h3><%= link_to u.name, user_path(u) %></h3>
-  <h3><%= u.email %></h3>
-  <h3><%= u.certification %></h3>
+  <h4><%= u.email %></h4>
   <hr>
 <% end %>

@@ -1,8 +1,7 @@
-<h3><center> SCUBA Divelog App </h3></center>
+<h1><center>LIST OF DIVES</center></h1>
+<center><%= link_to "Add new Dive", new_dife_path %></center>
 
-<h1>LIST OF DIVES</h1> <%= link_to "Add new Dive", new_dife_path %>
-
-<% @dives.reverse.each do |d| %>
+<% @dives.each do |d| %>
   <h3><%= d.number %>
     <%= d.date.strftime('%d %b %y') %></h3>
   <h4><%= d.timein.strftime('%H:%M') %>
