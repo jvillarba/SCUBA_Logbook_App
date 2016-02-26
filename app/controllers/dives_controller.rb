@@ -17,7 +17,7 @@ class DivesController < ApplicationController
         @dive.save
       redirect_to dives_path
     else
-      render :new
+      redirect_to root_path
     end
   end
 

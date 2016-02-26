@@ -17,7 +17,7 @@ class PlacesController < ApplicationController
     if @place.save
       redirect_to places_path
     else
-      render :new
+      redirect_to root_path
     end
   end
 
