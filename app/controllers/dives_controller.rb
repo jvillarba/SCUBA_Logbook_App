@@ -4,6 +4,7 @@ class DivesController < ApplicationController
   end
 
   def show
+    @places = Place.all
     @dive = Dive.find(params[:id])
   end
 

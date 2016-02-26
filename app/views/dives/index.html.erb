@@ -1,12 +1,14 @@
-<h1><center>LIST OF DIVES</center></h1>
-<center><%= link_to "Add new Dive", new_dive_path %></center>
+<div class="container">
+  <h1><center>LIST OF DIVES</center></h1>
+  <center><%= link_to "Add new Dive", new_dive_path %></center>
 
-<% @dives.each do |d| %>
-  <h3><%= d.number %>
-    <%= d.date.strftime('%d %b %y') %></h3>
-  <h4><%= d.timein.strftime('%H:%M') %>
-    <%= d.timeout.strftime('%H:%M') %>
-    <%= d.depth %>
-    <%= d.bottom_time %></h4>
-  <hr>
-<% end %>
+  <% @dives.each do |d| %>
+    <h3><%= d.number %>
+      <%= d.date.strftime('%d %b %y') %></h3>
+    <h4><%= d.timein.strftime('%H:%M') %>
+      <%= d.timeout.strftime('%H:%M') %>
+      <%= d.depth %>
+      <%= d.bottom_time %></h4>
+    <hr>
+  <% end %>
+</div>
