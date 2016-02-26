@@ -11,6 +11,8 @@
   <center>
     <%= link_to "Edit", edit_place_path(@place) %> |
     <%= link_to "Delete", place_path, method: :delete, data: {
-      confirm: "Are you sure you want to delete this dive site?"} %>
+      confirm: "Are you sure you want to delete this dive site?"} %> |
+    <%= link_to "Back", 'javascript:history.go(-1);' %>
+
   </center>
 </div>

@@ -3,14 +3,13 @@
   <center><%= link_to "Add new Dive", new_dive_path %></center>
 
   <center>
-  <% @dives.each do |d| %>
+  <% @dives.reverse.each do |d| %>
     <h3><%= link_to d.number, dive_path(d) %>
       <%= d.date.strftime('%d %b %y') %>
-      <%= link_to d.place.sites, place_path(d) %></h3>
+      <%= d.place.sites %></h3>
 
-    <h4><%= d.timein.strftime('%H:%M') %>
-      <%= d.timeout.strftime('%H:%M') %>
-      <%= d.depth %>
+    <h4>Bottom time: <%= ((d.timeout - d.timein)/60).to_i %> min. |
+      Max. depth of <%= d.depth %> feet
     <hr>
   <% end %>
 </center>

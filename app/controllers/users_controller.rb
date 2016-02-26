@@ -12,9 +12,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    if @user = current_user.users.new(dive_params)
-      @user.save
-        redirect_to users_path
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to users_path
     else
       redirect_to root_path
     end
