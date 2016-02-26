@@ -40,4 +40,4 @@ As a diver, I want to be add the different sites and add photos to recall the un
 * Heroku/AWS
 
 The following drafts are ERBs of my online SCUBA divelog.
-![](/app/assets/images/logbook.png)![](/assets/images/wireframe.jpg)
+![](/app/assets/images/logbook.png)![](/app/assets/images/wireframe.jpg)
