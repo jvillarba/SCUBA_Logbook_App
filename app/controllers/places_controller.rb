@@ -29,7 +29,7 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
 
     if @place.update_attributes(place_params)
-      redirect_to places_path(@place)
+      redirect_to place_path(@place)
     else
       redirect_to edit_place_path(@place)
     end

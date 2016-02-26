@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'users#index'
+  root 'places#index'
   resources :users, :places, :dives
 
   get '/logout' => 'sessions#destroy', as: :logout

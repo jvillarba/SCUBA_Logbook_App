@@ -1,8 +1,9 @@
 <h1><center>LIST OF DIVE SITES</h1></center>
-<center><%= link_to "Add new Dive Site", new_place_path %></center>
+<center><%= link_to "Add new Dive Site", new_place_path %>
 
 <% @places.reverse.each do |p| %>
-  <h4><%= link_to p.city, place_path(p) %></h4>
-  <h3><%= p.sites %></h3>
+  <h3><%= p.city %> |
+    <%= link_to p.sites, place_path(p) %></h3>
   <hr>
 <% end %>
+</center>

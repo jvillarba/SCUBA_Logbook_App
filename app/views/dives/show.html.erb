@@ -1,5 +1,10 @@
-<h3><center> SCUBA Divelog App </h3></center>
-<p>
+<div class="container">
+  <div class="jumbotron">
+    <center><h1>SCUBA DIVES</h1></center>
+    <p>...</p>
+  </div>
+</div>
+<p><center>
   <strong>#</strong>
   <%= @dive.number %> |
   <strong>Date</strong>
@@ -28,7 +33,8 @@
   <%= @dive.computer %>
 </p>
 
-<%= link_to "Edit", edit_dife_path(@dive) %> |
-<%= link_to "Delete", dife_path, method: :delete, data: {
+<%= link_to "Edit", edit_dive_path(@dive) %> |
+<%= link_to "Delete", dive_path, method: :delete, data: {
   confirm: "Are you sure you want to delete this dive?"} %> |
 <%= link_to "All Dives", dives_path %>
+</center>

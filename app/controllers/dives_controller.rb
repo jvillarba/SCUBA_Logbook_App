@@ -12,8 +12,8 @@ class DivesController < ApplicationController
   end
 
   def create
-    @dive = Dive.new(dive_params)
-    if @dive.save
+    if @dive = current_user.dives.new(dive_params)
+        @dive.save
       redirect_to dives_path
     else
       render :new
