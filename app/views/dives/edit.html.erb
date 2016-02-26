@@ -13,6 +13,10 @@
     </div>
 
     <div>
+      <p> Dive Site <%= f.collection_select(:place_id, Place.all, :id, :sites) %> </p>
+    </div>
+
+    <div>
       <%= f.label :timein, 'Time In' %>
       <%= f.time_field :timein %>
     </div>
@@ -23,22 +27,17 @@
     </div>
 
     <div>
-      <%= f.label :depth, 'Max. Depth' %>
+      <%= f.label :depth, 'Max. Depth in feet' %>
       <%= f.number_field :depth %>
     </div>
 
     <div>
-      <%= f.label :bottom_time, 'Bottom Time' %>
-      <%= f.time_field :bottom_time %>
-    </div>
-
-    <div>
-      <%= f.label :air_start, 'Starting Air' %>
+      <%= f.label :air_start, 'Starting Air PSI' %>
       <%= f.number_field :air_start %>
     </div>
 
     <div>
-      <%= f.label :air_end, 'Ending Air' %>
+      <%= f.label :air_end, 'Ending Air PSI' %>
       <%= f.number_field :air_end %>
     </div>
 

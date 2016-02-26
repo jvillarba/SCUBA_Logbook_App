@@ -3,7 +3,8 @@
 
 <% @places.reverse.each do |p| %>
   <h3><%= p.city %> |
-    <%= link_to p.sites, place_path(p) %></h3>
+    <%= link_to p.sites, place_path(p) %> |
+    <%= p.dives.count %> Dives</h3>
   <hr>
 <% end %>
 </center>

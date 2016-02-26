@@ -3,13 +3,13 @@
     <center><h1>Welcome</h1></center>
     <p>...</p>
   </div>
+  <!-- <h3><%= @user.name %></h3> -->
+  <%= image_tag @user.avatar.url(:medium) %>
+
+  <h1><%= @user.name %></h1>
+
+  <%= link_to "Edit", edit_user_path %> |
+  <%= link_to "Delete", user_path, method: :delete, data: {
+    confirm: "Are you sure you want to delete this user?"} %> |
+  <%= link_to "Dive Log", dives_path %>
 </div>
-<h3><%= @user.name %></h3>
-<%= image_tag @user.avatar.url(:medium) %>
-
-<!-- <h1><%= @user.name %></h1> -->
-
-<%= link_to "Edit", edit_user_path %> |
-<%= link_to "Delete", user_path, method: :delete, data: {
-  confirm: "Are you sure you want to delete this user?"} %> |
-<%= link_to "Dive Log", dives_path %>

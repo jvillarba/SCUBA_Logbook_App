@@ -13,6 +13,10 @@
     </div>
 
     <div>
+      <p> Dive Site <%= f.collection_select(:place_id, Place.all, :id, :sites) %> </p>
+    </div>
+
+    <div>
       <%= f.label :timein, 'Time In' %>
       <%= f.time_field :timein %>
     </div>
